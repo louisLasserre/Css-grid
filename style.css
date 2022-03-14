@@ -1,0 +1,137 @@
+
+body{
+    background-color: hsl(210, 46%, 95%);;
+}
+.box{
+    
+    padding: 30px;
+    margin: 15px;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+
+    box-shadow: 30px 30px 30px 1px rgba(49, 49, 49, 0.123);
+    
+}
+.testimonial{
+    width: 80vw;
+    margin: 0 auto;
+    
+    display: grid;
+    grid-template-areas: 
+                "v v gn wk"
+                "w b b wk";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.violet{
+    background-color: hsl(263, 55%, 52%);
+    grid-area: v;
+}
+.darkGray {
+    background-color: hsl(217, 19%, 35%);
+    grid-area: gn;
+}
+.kira{
+    grid-area: wk;
+}
+.dark{
+    background-color: hsl(219, 29%, 14%);
+    grid-area: b;
+
+}
+.dg{
+    color: hsl(217, 19%, 35%);
+}
+.darkP{
+    color: hsl(217, 19%, 35%, 50%);
+}
+.darkPP{
+    color: hsl(217, 19%, 70%);
+}
+.w{
+    grid-area: w;
+}
+.white{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(219, 29%, 14%);
+    
+}
+
+
+.lg{
+    color: hsl(0, 0%, 81%);
+}
+.lgP{
+    color: hsl(0, 0%, 81%, 70%);
+}
+.lgPP{
+    color: hsl(0, 0%, 81%, 50%);
+    
+}
+.lgb{
+    color: hsl(210, 46%, 95%);
+}
+@media only screen and (max-width: 700px) {
+    .testimonial{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto ;
+        grid-template-areas: 
+                    "v"
+                    "gn"
+                    "w"
+                    "b"
+                    "wk";
+    }
+    .ref svg{
+        right: 20px !important;
+    }
+    
+}
+
+.id{
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    z-index: 2;
+    
+}
+.id span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.id img{
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+p{
+    margin: 2px;
+}
+.resum{
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+    z-index: 2;
+}
+.rounded-violet{
+    border: 2px solid hsl(263, 74%, 59%) !important;
+    
+}
+
+.ref{
+    position: relative;
+}
+.ref svg{
+    position: absolute;
+    z-index: 1;
+    top: 0;right: 80px;
+}
